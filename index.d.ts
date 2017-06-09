@@ -1,24 +1,39 @@
+type Sizes = 'xs' | 'sm' | 'md' | 'lg';
+
+interface RowProps {
+  around?: Sizes;
+  between?: Sizes;
+  bottom?: Sizes;
+  center?: Sizes;
+  end?: Sizes;
+  first?: Sizes;
+  last?: Sizes;
+  middle?: Sizes;
+  reverse?: boolean;
+  start?: Sizes;
+  style?: {};
+  top?: Sizes;
+}
+
 interface GridProps {
   fluid?: boolean;
   style?: {};
 }
 
-interface RowProps {
-  reverse?: boolean;
-  center?: string;
-  style?: {};
-  end?: string;
-}
-
 interface ColProps {
+  lg?: boolean | number;
+  lgOffset?: number;
+  md?: boolean | number;
+  mdOffset?: number;
   reverse?: boolean;
-  xs?: boolean | number;
   sm?: boolean | number;
-  style?: {};
+  smOffset?: number;
+  xs?: boolean | number;
+  xsOffset?: number;
 }
 
 declare module 'react-styled-flexboxgrid' {
-  export class Grid extends React.Component<GridProps, any> {}
-  export class Row extends React.Component<RowProps, any> {}
+  export class Grid extends React.Component<RowProps, any> {}
+  export class Row extends React.Component<GridProps, any> {}
   export class Col extends React.Component<ColProps, any> {}
 }
