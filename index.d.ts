@@ -1,3 +1,5 @@
+/// <reference types="react" />
+
 declare module 'react-styled-flexboxgrid' {
   type Sizes = 'xs' | 'sm' | 'md' | 'lg';
 
