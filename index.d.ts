@@ -33,7 +33,7 @@ interface ColProps {
 }
 
 declare module 'react-styled-flexboxgrid' {
-  export class Grid extends React.Component<RowProps, any> {}
-  export class Row extends React.Component<GridProps, any> {}
+  export class Grid extends React.Component<GridProps, any> {}
+  export class Row extends React.Component<RowProps, any> {}
   export class Col extends React.Component<ColProps, any> {}
 }
