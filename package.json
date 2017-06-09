@@ -9,5 +9,8 @@
         "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
     },
     "scripts": {},
-    "typeScriptVersion": "2.0"
+    "typeScriptVersion": "2.0",
+    "dependencies": {
+        "@types/react": "*",
+    }
 }
